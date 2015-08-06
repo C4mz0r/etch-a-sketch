@@ -3,10 +3,15 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="style.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 		<script type="text/javascript" src="sketch.js"></script>		
 	</head>
 	<body>
-		<div id="settings"><button onclick="reset()">Reset</button></div>
+		<div id="settings">
+			<div id="title">Etch-A-Sketch</div>
+			<button onclick="reset()">Resize</button>
+			<button id="shake">Shake</button>
+		</div>
 		<div id="main">
 		</div>
 	</body>

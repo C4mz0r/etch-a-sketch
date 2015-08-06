@@ -21,11 +21,33 @@
 }
 
 #main {
-	width: 960px;
-	height: 960px;
+	width: 480px;
+	height: 480px;
 	
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 /*	margin-left: 50%;
 */
 
 }
+
+#settings {
+	background-color: #aaa;
+	border: 1px solid #222;
+	width: 480px;
+	border-radius: 10px;
+}
+
+#title {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;	
+}
+
+button {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	margin: 0px 0px 10px 10px;
+}
+
+
