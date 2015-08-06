@@ -1,0 +1,31 @@
+.pixel {
+
+
+	/*width: 95px;*/
+	/*height: 95px;*/
+
+	border: 1px solid blue;	
+	margin-left:-1px; /* take out horizontal spacing between the divs */
+	float:left;
+	display: block;	
+	margin-bottom: -1px;	/* take out vertical spacing between the divs */
+}
+
+
+.rowstart {
+	clear:left; /* makes the divs separate out into rows.  Took some trial and error to figure it out of course! */
+}
+
+.highlighted {
+	background-color: blue;
+}
+
+#main {
+	width: 960px;
+	height: 960px;
+	
+	border: 2px solid red;
+/*	margin-left: 50%;
+*/
+
+}
