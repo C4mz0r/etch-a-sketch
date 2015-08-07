@@ -10,8 +10,8 @@ $(document).ready(
 		
 		// This will be called if the shake button is pressed
 		$("#shake").click(function(){
-			$("#main").effect("bounce", {times:2, direction:"down"}, "slow", function(){
-				$("body").fadeOut("slow", function(){
+			$("#etch").effect("bounce", {times:2, direction:"down"}, "slow", function(){
+				$("#main").fadeOut("slow", function(){
 					drawSquares();	
 				});
 			});
@@ -27,7 +27,7 @@ $(document).ready(
 function drawSquares(){		
 
 	$('#main').empty();
-	$('body').fadeIn();
+	$('#main').fadeIn();
 	// draw them out a row at a time
 	for (var rows = 0; rows < numrows; rows++){
 		$('#main').append("<div class='rowstart'></div>");
@@ -37,7 +37,7 @@ function drawSquares(){
 	}
 		
 	var pixelHeight = parseInt($("#main").css("height")) / numrows - 1;
-	var pixelWidth = parseInt($("#main").css("width")) / numcols - 1;
+	var pixelWidth = parseInt($("#main").css("width")) / numcols - 2; /*changed to -2 since some #s were causing problems. I think it is since I resized the grid after adding the etch-a-sketch background */
 
 	// Setting the pixel height / width needed to be done after the pixels were drawn, it didn't work if done before.		
 	$('.pixel').css("height", pixelHeight);

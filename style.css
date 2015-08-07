@@ -1,10 +1,6 @@
 .pixel {
 
-
-	/*width: 95px;*/
-	/*height: 95px;*/
-
-	border: 1px solid blue;	
+	/* border: 1px solid blue;	*/
 	margin-left:-1px; /* take out horizontal spacing between the divs */
 	float:left;
 	display: block;	
@@ -17,23 +13,21 @@
 }
 
 .highlighted {
-	background-color: blue;
+	background-color: #222;
 }
 
 #main {
-	width: 480px;
-	height: 480px;
-	
-	/*border: 2px solid red;*/
-/*	margin-left: 50%;
-*/
-
+	width: 715px;
+	height: 540px;
+	position: relative;
+	top: -710px;
+	left: 160px;
 }
 
 #settings {
 	background-color: #aaa;
 	border: 1px solid #222;
-	width: 480px;
+	width: 1024px;
 	border-radius: 10px;
 }
 
